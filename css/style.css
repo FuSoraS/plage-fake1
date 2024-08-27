@@ -37,24 +37,35 @@ body {
 }
 .footer {
     border-top: 2px solid #000;
+    padding-top: 20px;
 }
 .footer__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .footer__div {
-    padding: 20px;
+    padding: 0 20px;
 }
 .footer__follow-us {
     grid-column: 2;
     text-align: center;
     margin: auto;
     margin-top: 0;
+    
 }
 .icon__redes {
     max-width: 40px;
 }
 .footer__logo {
     grid-column: 3;
-    max-width: 70px;
+    max-width: 100px;
+}
+.footer--logo {
+    margin: auto;
+}
+@media screen and (max-width:600px) {
+    .footer__conteiner {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

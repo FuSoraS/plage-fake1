@@ -35,8 +35,8 @@
     color: #fff;
     font-weight: bold;
     font-size: 50px;
+    transition: font-size 2s;
 }
-
 .hero__button {
     color: #FFF;
     background-color: var(--color-main);
@@ -76,11 +76,12 @@
     margin: 20px;
 }
 .shedule__div {
-    background-color: #292828;
+    margin-top: 20px;
+    background-color: #7b7877;
     display: inline;
-    height: 300px;
-    min-width: 5px;
-    border-radius: 100px;
+    height: 220px;
+    min-width: 1.5px;
+    border-radius: 10%;
     margin-left: 30px;
 }
 .location__map {
@@ -112,6 +113,7 @@
 @media screen and (max-width:600px) {
 	.hero__title {
 		font-size: 30px;
+        display: inline;
 	}
     .hero__button {
         font-size: 14px;
@@ -123,11 +125,16 @@
         margin-left: 50px;
     }
     .header {
-        height: 300px;
+        max-height: 350px;
         margin: 10px;
         text-align: center;
     }
     .shedule__div {
         display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .hero__title {
+        font-size: 40px;
     }
 }
