@@ -4,6 +4,7 @@ html {
 body {
     font-family: sans-serif;
     margin: 0;
+    background-color: #FFF;
 }
 .nav__list {
     padding: 0;
@@ -15,19 +16,18 @@ body {
     margin-bottom: 5px;
     border-bottom: 2px solid #8f7e7e;
 }
-.list__item {
-    padding: 10px 15px;
-}
 .item--link {
-    transition: background-color 0.3s, border-radius 0.24s;
-}
-.item--link:hover {
-    background-color: #CDB15690;
-    border-radius: 15px;
+    margin-bottom: 10px
 }
 .link__main {
     text-decoration: none;
     color: #000;
+    padding: 10px 15px;
+    transition: background-color 0.3s, border-radius 0.24s;
+}
+.link__main:hover {
+    background-color: #CDB15690;
+    border-radius: 15px;
 }
 .item--logo {
     padding-right: 10px;
@@ -39,10 +39,14 @@ body {
     border-top: 2px solid #000;
     padding-top: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .footer__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.contact--title {
+    font-weight: bold;
 }
 .footer__div {
     padding: 0 20px;

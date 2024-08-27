@@ -95,6 +95,12 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.div__title {
+    width: 100%;
+}
+.client-testimonials__title {
+    font-size: 26px;
+}
 .client-testimonials__conteiner {
     max-width: 250px;
     border: 1px solid #0005;
@@ -109,6 +115,21 @@
 }
 .client-testimonials__paragraph {
     text-wrap: pretty;
+}
+.section__service {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.service__title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.service__paragraph {
+    margin: 10px
 }
 @media screen and (max-width:600px) {
 	.hero__title {
