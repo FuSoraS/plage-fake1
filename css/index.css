@@ -61,47 +61,53 @@
 .shedule-location {
     color: #FFF;
     background-color: #000;
+    padding: 50px;
 }
 .shedule-location__conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.shedule__subtitle{
-    grid-column: 1;
-}
-.shedule__paragraph {
-    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .shedule-location__title {
     text-align: center;
-    padding: 30px;
+    margin: auto;
 }
 .location{
-    grid-column: 3;
+    margin: 20px;
 }
 .shedule__div {
     background-color: #292828;
+    display: inline;
     height: 300px;
-    width: 5px;
-    margin: 20px 20px;
+    min-width: 5px;
     border-radius: 100px;
-    grid-column: 2;
-    grid-row: 1;
-}
-.title--location {
-    margin-right: 100px;
-}
-.location--section {
-    grid-column: 4;
-    grid-row: 1;
-}
-.location--paragraph {
-    grid-row: 2;
+    margin-left: 30px;
 }
 .location__map {
     min-width: 300px;
     height: 200px;
-    grid-row: 1;
+}
+.client-testimonials {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.client-testimonials__conteiner {
+    max-width: 250px;
+    border: 1px solid #0005;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 9px 0 #0008;
+    transition: box-shadow 0.3s;
+}
+.client-testimonials__conteiner:hover {
+    box-shadow: 0 5px 9px 0 #CDB156;
+}
+.client-testimonials__paragraph {
+    text-wrap: pretty;
 }
 @media screen and (max-width:600px) {
 	.hero__title {
@@ -120,5 +126,8 @@
         height: 300px;
         margin: 10px;
         text-align: center;
+    }
+    .shedule__div {
+        display: none;
     }
 }

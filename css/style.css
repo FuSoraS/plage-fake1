@@ -32,20 +32,29 @@ body {
 .item--logo {
     padding-right: 10px;
 }
-.logo__image {
+.nav__logo {
     width: 50px;
 }
 .footer {
-    background-color: #494747;
-    color: #fff;
-    padding-top: 20px;
-    padding-left: 20px;
-
+    border-top: 2px solid #000;
 }
-.footer__contact-us {
-    margin: 0;
-    padding: 10px;
+.footer__conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.icon__image {
-    width: 40px;
+.footer__div {
+    padding: 20px;
+}
+.footer__follow-us {
+    grid-column: 2;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+}
+.icon__redes {
+    max-width: 40px;
+}
+.footer__logo {
+    grid-column: 3;
+    max-width: 70px;
 }
