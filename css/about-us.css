@@ -1,12 +1,26 @@
 .hero__image {
     max-width: 100%;
-	height: 500px;
-    background-image:url(/img/bg/bg2.webp);
+	min-height: 400px;
+    background-image:url(/img/bg/bg3.webp);
     background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.hero__subtitle {
+    max-width: 300px;
 }
 .about-us__title {
     text-transform: uppercase;
     text-align: center;
+}
+.about-us__paragraph {
+    margin: 5px 60px;
 }

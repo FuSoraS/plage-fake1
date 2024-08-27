@@ -9,22 +9,32 @@
     <title>¿Quienes somos?</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="list__item item--logo"><img class="logo__image" src="/img/logo-principal.webp" alt="logo"></li>
-                <li class="list__item item--link"><a class="link__main" href="/index.html">Inicio</a></li>
-                <li class="list__item item--link"><a class="link__main" href="/more page/about-us.html">¿Quienes somos?</a></li>
-                <li class="list__item item--link"><a class="link__main" href="">Servicio</a></li>
-                <li class="list__item item--link"><a class="link__main" href="">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="list__item item--logo">
+            <picture>
+                <source srcset="/img/icons/logo-main-1-2.png" type="image/png">
+                <img class="nav__logo" src="/img/icons/logo-main-1-1.webp" alt="logo" type="image/webp">
+            </picture>
+            </li>
+            <li class="list__item item--link"><a class="link__main" href="/index.html">Inicio</a></li>
+            <li class="list__item item--link"><a class="link__main" href="/content/about-us.html">¿Quienes somos?</a></li>
+            <li class="list__item item--link"><a class="link__main" href="">Servicio</a></li>
+            <li class="list__item item--link"><a class="link__main" href="">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="section__hero">
-            <div class="hero__image"></div>
-             <h2 class="hero__title">¿QUIÉNES SOMOS?</h2>
-            <h3 class="hero__subtitle">CAMBIAMOS VIDAS A TRAVÉS DEL DEPORTE Y BIENESTAR</h3>
+            <header class="header">
+                <div class="hero__image">
+                    <div class="div__hero">
+                        <h2 class="hero__title">¿QUIÉNES SOMOS?</h2>
+                    </div>
+                    <div class="div__hero">
+                    <h3 class="hero__subtitle">CAMBIAMOS VIDAS A TRAVÉS DEL DEPORTE Y BIENESTAR</h3>
+                    </div>
+                </div>
+            </header>
         </section>
 
         <section class="about-us">
@@ -39,21 +49,25 @@
                 efectivos.</p>
         </section>
     </main>
-        <footer class="footer">
-            <section class="footer__contact">
-                <p class="footer__contact-us">Contáctanos</p>
-                <p class="footer__contact-us">Teléfono: +56 9 8451 6237</p>
-                <p class="footer__contact-us">Correo Electrónico: info@fitzonegym.com</p>
-            </section>
-            <section class="footer__follow-us">
-                <h3 class="follow-us--title">Siguenos</h3>
-                <div class="follow-us__icon"><img class="icon__image" src="/img/icons social/facebook.webp" alt="icono de instagram"></div>
-                <div class="follow-us__icon"><img class="icon__image" src="/img/icons social/instagram.webp" alt="icono de facebook"></div>
-                <div class="follow-us__icon"><img class="icon__image" src="/img/icons social/x.webp" alt="icono de x"></div>
-            </section>
-            <section class="section__logo">
-                <img class="logo__image" src="/img/logo-principal.webp" alt="">
-            </section>
-        </footer>
+    <footer class="footer">
+        <div class="footer__conteiner footer__div">
+            <div>
+            <p class="footer__contact-us">Contáctanos</p>
+            <p class="footer__contact-us">Teléfono: +56 9 8451 6237</p>
+            <p class="footer__contact-us">Correo Electrónico: info@fitzonegym.com</p>
+            </div>
+            <div class="footer__follow-us footer__div">
+                <h3 class="follow-us__title">Síguenos</h3>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img class="icon__redes" src="/img/icons/facebook.webp" alt="icono de facebook"></a>
+
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><img class="icon__redes" src="/img/icons/instagram.webp" alt="icono de instagram"></a>
+
+                    <a href="https://x.com/" target="_blank" rel="noreferrer"><img class="icon__redes" src="/img/icons/x.webp" alt="icono de x o twitter"></a>
+            </div>
+        <div class="footer__div footer--logo">
+                <img class="logo__image footer__logo" src="/img/icons/logo-main-1-1.webp" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
