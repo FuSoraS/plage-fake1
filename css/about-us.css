@@ -39,5 +39,6 @@
 }
 .about-us__paragraph {
     margin: 5px 50px;
-    max-width: 500px;
+    max-width: 650px;
+    font-size: 20px;
 }
