@@ -70,7 +70,8 @@
 }
 .shedule-location__title {
     text-align: center;
-    margin: auto;
+    font-size: 2em;
+    margin: 20px;
 }
 .location{
     margin: 20px;
@@ -91,6 +92,7 @@
 .client-testimonials {
     display: flex;
     margin: 20px;
+    margin-top: 100px;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -99,7 +101,7 @@
     width: 100%;
 }
 .client-testimonials__title {
-    font-size: 26px;
+    font-size: 2em;
 }
 .client-testimonials__conteiner {
     max-width: 250px;
@@ -116,22 +118,40 @@
 .client-testimonials__paragraph {
     text-wrap: pretty;
 }
-.section__service {
+.service__conteiner{
     display: flex;
     flex-direction: column; 
-    align-items: center;
     background-color: #000;
     color: #fff;
     padding: 50px 0;
+    background-image:url(/img/bg/bg1.webp) ;
+    background-position-x: center;
+    
+}
+.section__service {
+    margin-top: 200px;
 }
 .service__title {
     text-transform: uppercase;
     text-align: center;
+    font-size: 2em;
 }
 .service__paragraph {
-    margin: 10px
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: var(--color-main);
+    border-radius: 20px;
+    max-width: 40%;
+    box-shadow: 2px 2px 10px 2px #000 ;
+    transition: background-color 0.5s;
 }
-
+.service__paragraph:hover {
+    background-color: #000;
+}
 @media screen and (max-width:600px) {
 	.hero__title {
 		font-size: 25px;

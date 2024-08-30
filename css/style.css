@@ -44,6 +44,7 @@ body {
 .footer__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width:600px) {display: flex; flex-wrap: wrap;}
 }
 .contact--title {
     font-weight: bold;
@@ -67,10 +68,4 @@ body {
 }
 .footer--logo {
     margin: auto;
-}
-@media screen and (max-width:600px) {
-    .footer__conteiner {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
