@@ -13,13 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 5px;
     border-bottom: 2px solid #8f7e7e;
 }
-.item--link {
+.list__item {
     margin-bottom: 10px
 }
 .link__main {
+    margin: auto;
     text-decoration: none;
     color: #000;
     padding: 10px 15px;
