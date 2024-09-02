@@ -51,7 +51,7 @@
     align-items: center;
     max-width: 90px;
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 100ms;
     position: absolute;
 }
 .hero__button:hover {
