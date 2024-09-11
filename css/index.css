@@ -122,6 +122,7 @@
 }
 .section__service {
     margin-top: 200px;
+    margin-bottom: 50px;
 }
 .service__title {
     text-transform: uppercase;
