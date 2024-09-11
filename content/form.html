@@ -22,39 +22,40 @@
             <li class="list__item nav__list"><a class="link__main" href="../content/form.html">Contáctonos</a></li>
         </ul>
     </nav>
-    <form action="" method="post" class="form">
+    <form action="https://formsubmit.co/your@email.com" method="post" class="form">
         <h1>Formulario de contacto</h1>
         <fieldset class="form form__body">
             <h2 class="form__title">Datos personales</h2>
             <label for="name">Nombre: </label>
-            <input class="form__input" type="text" placeholder="Nombre" id="name">
+            <input class="form__input" type="text" placeholder="Nombre" id="name" name="name">
             <label for="lastname">Apellido: </label>
-            <input class="form__input" type="text" placeholder="Apellido" id="lastname">
+            <input class="form__input" type="text" placeholder="Apellido" id="lastname" name="lastname">
             <label for="select-country">Seleccione el pais</label>
-            <select class="form__input" id="select-country">
+            <select class="form__input" id="select-country" name="country">
                 <option value="">Seleccione un pais</option>
-                <option value="">Argentina</option>
-                <option value="">Brasil</option>
-                <option value="">Chile</option>
-                <option value="">Colombia</option>
-                <option value="">Ecuador</option>
-                <option value="">Mexico</option>
-                <option value="">Peru</option>
-                <option value="">Uruguay</option>
-                <option value="">Venezuela</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Peru">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
             </select>
         </fieldset>
         <fieldset class="form form__body">
             <h2 class="form__title">Informacion de contacto</h2>
             <label for="email">Correo electronico: <span class="form__obligatory">*</span></label>
-            <input class="form__input" type="email" placeholder="Email" required id="email">
+            <input class="form__input" type="email" placeholder="Email" required id="email" name="email">
             <label for="phone">Telefono</label>
-            <input class="form__input" type="tel" placeholder="Telefono" id="phone">
+            <input class="form__input" type="tel" placeholder="Telefono" id="phone" name="phone">
             <label for="commet">Comentario</label>
-           <textarea id="commet" placeholder="Comentario..."></textarea>
+           <textarea id="commet" placeholder="Comentario..." name="commet"></textarea>
         </fieldset>
         <input type="submit" class="form__submit">
     </form>
+
     <footer class="footer">
         <div class="footer__conteiner footer__div">
             <div id="footer__contact">
