@@ -51,26 +51,22 @@ body {
 }
 .footer {
     border-top: 2px solid #000;
-    padding-top: 20px;
-    margin-bottom: 50px;
+    padding: 30px 0;
 }
 .footer__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px;
     @media (max-width:600px) {display: flex; flex-wrap: wrap;}
 }
 .contact--title {
     font-weight: bold;
-}
-.footer__div {
-    padding: 0 20px;
 }
 .footer__follow-us {
     grid-column: 2;
     text-align: center;
     margin: auto;
     margin-top: 0;
-    
 }
 .icon__redes {
     max-width: 40px;
@@ -80,5 +76,8 @@ body {
     max-width: 100px;
 }
 .footer--logo {
+    margin: auto;
+}
+.footer__logo {
     margin: auto;
 }
