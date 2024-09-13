@@ -6,27 +6,29 @@
     gap: 15px;
     background-color: #f4fcf0;
     padding-bottom: 50px;
-}
-.form__body {
-    margin: 10px;
-    padding-bottom: 45px;
-    box-shadow: 0 0 20px #0009;
-    width: 500px;
-    background-color: #fff;
-}
-.form__title {
-    font-size: 1.3em;
-}
-.form__input {
-    padding: 5px 10px;
-}
-.form__submit {
-    background-color: #000;
-    color: #fff;
-    margin: 20px;
-    padding: 5px 15px;
-    border-radius: 10px;
-}
-.form__obligatory {
-    color: #f13;
+
+    & .form__body {
+        margin: 10px;
+        padding-bottom: 45px;
+        box-shadow: 0 0 20px #0009;
+        width: 500px;
+        background-color: #fff;
+        
+        & .form__title {
+            font-size: 1.3em;
+        }
+        & .form__input {
+            padding: 5px 10px;
+        }
+        & .form__obligatory {
+            color: #f13;
+        }
+    }
+    & .form__submit {
+        background-color: #000;
+        color: #fff;
+        margin: 20px;
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
 }

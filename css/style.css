@@ -1,3 +1,9 @@
+/* Variable */
+:root {
+    --gold: #7f6c2f;
+    --gold-weak: #CDB156;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,71 +19,78 @@ body {
     z-index: 3;
     width: 100%;
     animation: animate-header linear both;
+    
+    & .nav__list {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    & .nav--conteiner {
+        margin: 0;
+        border-bottom: 2px solid #8f7e7e;
+        padding: 10px 0;
+    }
+    & .list__item {
+        & .link__main {
+            margin: auto;
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+            transition: background-color 0.3s, border-radius 0.24s;
+
+            &:hover {
+                background-color: #CDB15690;
+                border-radius: 15px;
+            }
+        }
+    }
+    & .item--logo {
+        padding-right: 10px;
+    }
+    & .nav__logo {
+        width: 50px;
+    }
 }
 @keyframes animate-header {
     to {
-        background-color: rgb(255, 255, 255, .9);
+        background-color: rgb(100% 100% 100% / 90%);
     }
-}
-.nav__list {
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.nav--conteiner {
-    margin: 0;
-    border-bottom: 2px solid #8f7e7e;
-    padding: 10px 0;
-}
-.link__main {
-    margin: auto;
-    text-decoration: none;
-    color: #000;
-    padding: 10px 15px;
-    transition: background-color 0.3s, border-radius 0.24s;
-}
-.link__main:hover {
-    background-color: #CDB15690;
-    border-radius: 15px;
-}
-.item--logo {
-    padding-right: 10px;
-}
-.nav__logo {
-    width: 50px;
 }
 .footer {
     border-top: 2px solid #000;
     padding: 30px 0;
-}
-.footer__conteiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 20px;
-    @media (max-width:600px) {display: flex; flex-wrap: wrap;}
-}
-.contact--title {
-    font-weight: bold;
-}
-.footer__follow-us {
-    grid-column: 2;
-    text-align: center;
-    margin: auto;
-    margin-top: 0;
-}
-.icon__redes {
-    max-width: 40px;
-}
-.footer__logo {
-    grid-column: 3;
-    max-width: 100px;
-}
-.footer--logo {
-    margin: auto;
-}
-.footer__logo {
-    margin: auto;
+
+    & .footer__conteiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 20px;
+        @media (max-width:600px) {display: flex; flex-wrap: wrap;}
+
+        & footer__contact {
+            & .contact--title {
+                font-weight: bold;
+            }
+        }
+        & .footer__follow-us {
+            grid-column: 2;
+            text-align: center;
+            margin: auto;
+            margin-top: 0;
+
+            & .icon__redes {
+                max-width: 40px;
+            }
+        }
+        & .footer__logo {
+            margin: auto;
+
+            & .footer__image {
+                grid-column: 3;
+                max-width: 100px;
+            }
+        }
+    }
 }

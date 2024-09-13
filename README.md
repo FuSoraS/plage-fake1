@@ -1,7 +1,7 @@
 # Fictitious Page of a Gym
 First project of a web page I've actually done
 # Methodologies
-- CSS - BEM Methodology
+- CSS - BEM Methodology and CSS Nesting
 - Git - Conventional Commits
 - HTML - HTML Semantic Elements
 # Screenshots of the Page
