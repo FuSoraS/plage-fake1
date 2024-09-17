@@ -28,8 +28,12 @@
             z-index: 2;
             position: relative;
         }
+        & .hero__title {
+            font-size: 2rem;
+        }
         & .hero__subtitle {
             max-width: 300px;
+            font-size: 1.2rem;
         }
     }
 }
